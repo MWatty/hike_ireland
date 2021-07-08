@@ -1,102 +1,285 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# HIKE IRELAND
 
-Welcome USER_NAME,
+Milestone Project 3 - Backend Development - Code Institute 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
+## Demo 
 
-## Gitpod Reminders
+A live demo can be found [here]
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## UX 
 
-`python3 -m http.server`
+### Strategy 
 
-A blue button should appear to click: _Make Public_,
+Hike Ireland - is as per the name a website with informaiton on Hikes around Ireland. It's a 
+website that allows hikers, walkers, ramblers and everyone else in between to come together and 
+share details on the wonderful hikes in Ireland. 
 
-Another blue button should appear to click: _Open Browser_.
+This website is for everyone that is looking for a simple, easy to 
+understand and easy to navigate website with details on hikes in Ireland. This is achieved by 
+having a simple, clear funcitonal easy to understand website. Visitors will want to come back 
+time and time again to gather information, provide information and learn more about hikes all over Ireland. 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### User Stories 
 
-A blue button should appear to click: _Make Public_,
+#### Visitor Goals 
 
-Another blue button should appear to click: _Open Browser_.
+* As a visitor, I want to understand the main purpose of the site. 
+* As a visitor, I want the site to be simple to navigate.
+* As a visitor, I want to quickly find information about hikes. 
+* As a visitor, I want register an account so that I can add, update, edit and delete information I have provided.  
+* As a visitor, I want the site to be visually appealing.
+* As a visitor, I want the sire to be accessible and responsive on all devices. 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+#### Site owner goals
 
-To log into the Heroku toolbelt CLI:
+* As a site owner, I want this site to be responsive so that visitors can have a good experience on all devices. 
+* As a site owner, I want visitors to find this site visually appealing.  
+* As a site owner, I want visitors to enjoy and interact with the site.
+* As a site owner, I want visitors to return to the site and provide information on hikes. 
+* As a site owner, I want to create a community where hikers come together and share information. 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Scope
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+* For users, the site owner wanted to create a website that acts as a one stop shop for details on 
+hikes around the Country, currently there are no such sites where hikers, walkers etc can gather required information 
+all in one place. 
 
-------
+### Structure 
 
-## Release History
+* In order to meet the expectation of "Hike Ireland" users,  the website aims to stick to convention 
+in its layout and architecture.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* There is a header  and footer section on each page, with a "Hike Ireland" heading. Clicking on this
+ heading will take the user back to the landing page of the website and this is, as mentioned above, 
+an expected and understood convention. 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+* There is a Log In / Registration Feature which enabes users to create an account and create, update, edit and delete
+hiking posts. 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+* All elements of the website are easily discoverable and aim to ensure that the user can get to their desired destination within 
+3 clicks. 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+* The colouring, theme and terminology used throughout the website is consistent.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+* The website is interactive and provides lots of feedback to the user. 
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+* The architecture of this website has been carefully considered with the user in mind and allows for ease of movement through the content. 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+* Information on this section has been inspired by the information on [Code Institute](https://learn.codeinstitute.net/ci_program/diplomainsoftwaredevelopment)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Skeleton 
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+All wireframes were created using [Balsamiq](http://balsamiq.com)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+Please find full PDF versions of wireframes and sketches below:
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+* [Mobile Wireframe]
+* [Tablet Wireframe]
+* [Desktop Wireframe]
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Surface 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+#### Design 
 
-------
+ * The overall design of the website is  simple. The site owner wants the user to simply navigate and 
+understand what is on offer without being inundated with information. Clear text and imagery are used to achieve this. 
 
-## FAQ about the uptime script
+#### Colour 
 
-**Why have you added this script?**
+* A palette of Blacks, Greens, Greys and Whites are used throughout. The use of such colours is to relfect the green in the land and 
+also to allow the imagery of the hikes to take centre stage. 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+* When choosing the colours the [Colour Picker Tool](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool) was used to assist.
 
-**How will this affect me?**
+#### Typography
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+* Mukta was chosen as this is a simple and unfussy font which will be clear and easy to read. 
+This was chosen using [google fonts](https://fonts.google.com/)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+* font-family: 'Mukta', sans-serif;
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+#### Images 
 
-**So….?**
+* All images used throughout the website have been carefully chosen to ensure the theme of the website is maintained throughout. 
+Of course, users can upload their own images when adding posts which may lead to some differences in overall styling.  
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Final Project Variations 
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## Features 
+
+### Existing Features 
+
+### Features left to implement 
+
+
+## Technologies Used 
+
+### Languages
+
+* [HTML5](https://www.graycelltech.com/why-use-html-5/) was used as this is the latest Hypertext Markup Language and this is the standard language for describing the contents and appearance of Web Pages.
+  All major browsers offer HTML5 support. 
+
+* [CSS](https://www.w3schools.com/css/css_intro.asp) is used to define styles for web pages, including the design, layout and variations in display for different devices and screen sizes.
+
+* [JavaScript](https://www.w3schools.com/js/DEFAULT.asp) is used to program the behaviour of webpages.
+
+### Libraries 
+
+* [Bootstrap](https://getbootstrap.com/) was used as this lends itself to quickly design and customize mobile first-sites.
+
+* [Google-Fonts](https://fonts.google.com/) were used to style the website fonts and ensure they complimented each other.
+
+* [Balsamiq](https://balsamiq.com/) used to create the wireframes. 
+
+* [Font Awesome](https://fontawesome.com/) was used to add font icons to the website. 
+
+* [JQuery](https://jquery.com/) was used to make the use of JavaScript on the website easier. 
+
+### Version Control 
+
+* [GIT](https://git-scm.com/) was used as version control in utilising [Gitpod](https://gitpod.io) to add code, commit and push to [GitHub](https://github.com).
+
+* [Gitpod](https://gitpod.io) was used as this is an open source platform for automated and ready to code development environments that blends into your existing workflow.
+
+* [GitHub](https://github.com) was used as a hosting platform for version control.
+
+### Tools and Other Resources 
+
+* [Pixlr](https://pixlr.com/) was used to resize the images for optimum size for web use (max 798 x 1280).
+
+* [TinyJPG](https://tinyjpg.com/) was used to compress the image files.
+
+* [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) was used to edit pages and diagnose problems quickly. 
+
+* [Browserling](https://www.browserling.com/) was used for cross browser testing.
+
+* [Am I responsive](http://ami.responsivedesign.is/#) was used to create a mock up.
+
+* [Web Formatter](https://webformatter.com/html) used to correctly indent files. 
+
+## Testing 
+
+
+### Testing User Stories from User Experience (UX) Section
+
+#### Visitors 
+
+#### Site Owner 
+
+    
+   
+### Further Testing
+
+
+#### Devices 
+
+
+#### Issues identified during testing 
+
+
+### Features Tested 
+
+## Deployment 
+
+### GitHub Pages
+
+The project was deployed to GitHub Pages using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://https://github.com/MWatty/Hike-Ireland)
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+   - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+5. The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site [link](https://github.com/MWatty/Hike-Ireland) in the "GitHub Pages" section.
+
+### Forking the GitHub Repository
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps.
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/MWatty/Hike-Ireland)
+2. Locate the "Fork" Button and Click it. 
+3. You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/MWatty/Hike-Ireland)
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
 
 ```
-pkill uptime.sh
-rm .vscode/uptime.sh
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY-NAME
 ```
 
-**Anything more?**
+7. Press Enter. Your local clone will be created.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY-NAME
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```
 
----
+Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
-Happy coding!
+### Creating Collections in MongoDB
+
+1. Login to your MongoDB account
+2. Create a **cluster**
+3. Create a **database**
+4. Create required **collections** in the database named.
+
+### Setting Up the Environment Variables
+1. Create a file called **.gitignore** in the root directory of your project
+2. Add the following text in your .gitignore file: **env.py**
+3. Create a file called **env.py**. This will contain all your environment variables
+4. Create your own personal secret key and password. In **env.py** add the following text and replace **YOURPASSWORD**, **YOUR-CLUSTER-NAME**, **YOUR-DATABASE-NAME** and **YOURSECRETKEY**    
+
+### Run the App 
+1. Open your terminal window in your IDE
+2. Type in **python3 app.py** to run the app
+
+### Heroku Deployment
+1. Create a Heroku account
+2. Create a new app and select your region
+3. In the terminal window of your local IDE type **pip3 freeze --local > requirements.txt** to create a requirements.txt file. This file is needed so that Heroku knows which files needs to be installed
+5. In the terminal window of your local IDE type **python app.py > Procfile** to create a Procfile. This file is needed so that Heroku knows which file is needed as its entry point to get the app up and running
+6. In the terminal window of your local IDE type in **heroku login** or **heroku login -i** and fill in your heroku credentials and password
+7. Commit all your files and type in the same terminal window **git push heroku master**. Now all your files are committed to Heroku
+8. Go back to your Heroku account and go to **settings**
+9. Click on **Reveal Config Vars** to reveal the keys and the values
+10. Set the keys and values as follow:
+    (**KEY: VALUE**)
+    - IP: 0.0.0.0
+    - PORT: 5000
+    - MONGO_DBNAME: YOUR-DATABASE-NAME
+    - MONGO_URI: mongodb+srv://root:**YOURPASSWORD**@**YOUR-CLUSTER-NAME**.2qobt.mongodb.net/**YOUR-DATABASE-NAME**?retryWrites=true&w=majority
+    - SECRET_KEY: YOURSECRETKEY
+11. Click on **Open app** in the right corner of your Heroku account, the application will open in a new window
+12. The live link is available from the address bar
+
+## Credits 
+
+### Content 
+
+* Content was written by the developer Maura Watkinson. 
+
+### Code 
+
+### Media 
+
+### Other 
+* <i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+### Acknowledgements 
+
+
+
+
+
