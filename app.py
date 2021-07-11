@@ -25,13 +25,6 @@ def get_hikes():
     return render_template("hikes.html", hikes=hikes)
 
 
-@app.route("/search", methods=["GET", "POST"])
-def search():
-    query = request.form.get("query")
-    hikes = mongo.db.hikes.find({"$text": {"$search": query}})
-    return render_template("hikes.html", hikes=hikes)
-
-
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
