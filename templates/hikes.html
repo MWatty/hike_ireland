@@ -1,32 +1,25 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="flexbox">
+
+<div class="row">
     {% for hike in hikes %}
-    <div class="card hoverable">
-        <div class="card-image waves-effect waves-block waves-light">
-            <img src="{{ hike.hike_image_url }}" alt="hike image">
-        </div>
-        <div class="card-content">
-            <!--Hike Name and County -->
-            <span class="center-align card-title activator grey-text text-darken-4"><strong>{{ hike.hike_name }} ,
-                    {{ hike.county_name }}</strong>
-                <!-- OPEN description button -->
-                <i class="btn open-description-btn green darken-1">Hike Details</i></span>
-        </div>
-        <div class="card-reveal">
-            <!-- CLOSE description button, City, Country -->
-            <span class="card-title">{{ hike.hike_name }}, {{ hike.county_name }}
-                <i class="btn-small fas fa-times close-description-btn right"></i>
-            </span>
-            <p><strong>Hike details:</strong> {{ hike.hike_details }}</p>
-            <p><strong>Distance:</strong> {{ hike.hike_distance }}</p>
-            <p><strong>Difficulty:</strong> {{ hike.difficulty_level }}</p>
-            <p class="centre"><em> Created by:</em> {{ hike.created_by }}</p>
+    <div class="col s12 m7">
+        <div class="card">
+            <div class="card-image">
+                <img src="{{ hike.hike_image_url }}" alt="hike image">
+            </div>
+            <div class="card-title"><strong>{{ hike.hike_name }} ,
+                    {{ hike.county_name }}</strong></div>
+            <div class="card-content">
+                <p><strong>Hike details:</strong> {{ hike.hike_details }}</p>
+                <p><strong>Distance:</strong> {{ hike.hike_distance }}</p>
+                <p><strong>Difficulty:</strong> {{ hike.difficulty_level }}</p>
+                <p class="centre"><em> Created by:</em> {{ hike.created_by }}</p>
+            </div>
         </div>
     </div>
     {% endfor %}
 </div>
-
 
 {% endblock %}
