@@ -54,19 +54,19 @@
         </div>
         <div class="card-content">
             <!--Hike Name and County -->
-            <span class="center-align card-title activator grey-text text-darken-4"><strong>{{ hike.name }} ,
-                    {{ hike.county }}</strong>
+            <span class="center-align card-title activator grey-text text-darken-4"><strong>{{ hike.hike_name }} ,
+                    {{ hike.county_name }}</strong>
                 <!-- OPEN description button -->
                 <i class="btn open-description-btn green darken-1">Hike Details</i></span>
         </div>
         <div class="card-reveal">
             <!-- CLOSE description button, City, Country -->
-            <span class="card-title">{{ hike.name }}, {{ hike.county }}
+            <span class="card-title">{{ hike.hike_name }}, {{ hike.county_name }}
                 <i class="btn-small fas fa-times close-description-btn right"></i>
             </span>
             <p><strong>Hike details:</strong> {{ hike.hike_details }}</p>
-            <p><strong>Distance:</strong> {{ hike.distance }}</p>
-            <p><strong>Difficulty:</strong> {{ hike.difficulty }}</p>
+            <p><strong>Distance:</strong> {{ hike.hike_distance }}</p>
+            <p><strong>Difficulty:</strong> {{ hike.difficulty_level }}</p>
             <p class="centre"><em> Created by:</em> {{ hike.created_by }}</p>
         </div>
     </div>
