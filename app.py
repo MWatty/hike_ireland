@@ -99,8 +99,21 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/add_hike")
+@app.route("/add_hike", methods=["GET", "POST"])
 def add_hike():
+    if request.method == "POST":
+        hike = {
+            "hike_name": request.form.get("hike_name"),
+            "county_name": request.form.get("county_name"),
+            "hike_distance": request.form.get("hike_distance"),
+            "difficulty_level": request.form.get("difficulty_level"),
+            "hike_details": request.form.get("hike_details"),
+            "hike_image_url": request.form.get("hike_image_url"),
+            "created_by": request.form.get("created_by")
+        }
+        mongo.db.hikes.insert_one(hike)
+        flash("Hike Successfully Added")
+        return redirect(url_for("get_hikes"))
     return render_template("add_hike.html")
 
 
