@@ -109,7 +109,7 @@ def add_hike():
             "difficulty_level": request.form.get("difficulty_level"),
             "hike_details": request.form.get("hike_details"),
             "hike_image_url": request.form.get("hike_image_url"),
-            "created_by": request.form.get("created_by")
+            "created_by": session["user"]
         }
         mongo.db.hikes.insert_one(hike)
         flash("Hike Successfully Added")
