@@ -7,8 +7,37 @@
                 <h3 class="center-align light-green-text text-darken-1">
                     {{ username }}'s Profile
                 </h3>
+                <div class="row">
+                    <a href="{{ url_for('add_hike') }}" class="btn-small add-a-hike green darken-4">Add a Hike</a>
+                </div>
             </div>
         </div>
     </div>
 
+   
+    <div class="row">
+        {% for hike in hikes %}
+        {% if session.user|lower == hike.created_by|lower%}
+        <div class="col s12 m6">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{{ hike.hike_image_url }}" alt="hike image">
+                </div>
+                <div class="card-title"><strong>{{ hike.hike_name }} ,
+                        {{ hike.county_name }}</strong></div>
+                <div class="card-content">
+                    <p><strong>Hike details:</strong> {{ hike.hike_details }}</p>
+                    <p><strong>Distance:</strong> {{ hike.hike_distance }}</p>
+                    <p><strong>Difficulty:</strong> {{ hike.difficulty_level }}</p>
+                    <p class="centre"><em> Created by:</em> {{ hike.created_by }}</p>
+                        <a href="{{ url_for('delete_hike', hike_id=hike._id)}}" class="btn-small red darken-4">Delete</a>
+                        <a href="{{ url_for('edit_hike', hike_id=hike._id)}}" class="btn-small  green darken-4">Edit</a>
+                    {% endif %}
+                </div>  
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    
+        
 {% endblock %}
