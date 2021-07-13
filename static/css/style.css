@@ -36,3 +36,20 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.footer-colour{
+    background-color: #43a047;
+}
+
+.fab{
+    font-size: 25px;
+}
+
+.brand-logo-footer{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.footer-copyright{
+    background-color: #1b5e20;
+}
