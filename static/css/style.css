@@ -53,3 +53,8 @@ body{
 .footer-copyright{
     background-color: #1b5e20;
 }
+
+ul.footer-list li{
+    display: inline;
+    margin: 12px;
+}
