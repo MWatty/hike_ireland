@@ -117,8 +117,21 @@ def add_hike():
     return render_template("add_hike.html")
 
 
-@app.route("/edit_hike/<hike_id>" , methods=["GET", "POST"])
+@app.route("/edit_hike/<hike_id>", methods=["GET", "POST"])
 def edit_hike(hike_id):
+    if request.method == "POST":
+        submit = {
+            "hike_name": request.form.get("hike_name"),
+            "county_name": request.form.get("county_name"),
+            "hike_distance": request.form.get("hike_distance"),
+            "difficulty_level": request.form.get("difficulty_level"),
+            "hike_details": request.form.get("hike_details"),
+            "hike_image_url": request.form.get("hike_image_url"),
+            "created_by": session["user"]
+        }
+        mongo.db.hikes.update({"_id": ObjectId(hike_id)},submit)
+        flash("Hike Successfully Updated")
+
     hike = mongo.db.hikes.find_one({"_id": ObjectId(hike_id)})
     hikes = mongo.db.categories.find().sort("hike_name", 1)
     return render_template("edit_hike.html", hike=hike, hikes=hikes)
