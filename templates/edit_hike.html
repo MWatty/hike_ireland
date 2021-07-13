@@ -9,7 +9,8 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-hiking prefix light-green-text text-darken-4"></i>
-                <input id="hike_name" name="hike_name" minlength="5" maxlength="100" type="text" class="validate"
+                <input id="hike_name" name="hike_name" minlength="5" maxlength="100" value="{{hike.hike_name}}"
+                type="text" class="validate"
                     required>
                 <label for="hike_name">Hike Name</label>
             </div>
@@ -18,7 +19,8 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-location-arrow prefix light-green-text text-darken-4"></i>
-                <input id="county_name" name="county_name" minlength="3" maxlength="30" type="tel" class="validate"
+                <input id="county_name" name="county_name" minlength="3" maxlength="30" value="{{hike.county_name}}"
+                type="tel" class="validate"
                     required>
                 <label for="county_name">County Name</label>
             </div>
@@ -27,8 +29,8 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-ruler prefix light-green-text text-darken-4"></i>
-                <input id="hike_distance" name="hike_distance" minlength="1" maxlength="100" type="number"
-                    class="validate" required>
+                <input id="hike_distance" name="hike_distance" minlength="1" maxlength="100000"  value="{{hike.hike_distance}}"
+                type="number" class="validate" required>
                 <label for="hike_distance">Distance in km</label>
             </div>
         </div>
@@ -38,9 +40,9 @@
                 <i class="fas fa-shoe-prints prefix light-green-text text-darken-4"></i>
                 <select id="difficulty_level" name="difficulty_level" class="validate" required>
                     <option value="" disabled selected>Choose your option</option>
-                    <option value="1">Easy</option>
-                    <option value="2">Moderate</option>
-                    <option value="3">Streneous</option>
+                    <option value="easy">Easy</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="streneous">Streneous</option>
                 </select>
                 <label for="difficulty_level">Difficulty Level</label>
             </div>
@@ -50,7 +52,9 @@
             <div class="input-field col s12">
                 <i class="fas fa-align-left prefix light-green-text text-darken-4"></i>
                 <textarea id="hike_details" name="hike_details" minlength="5" maxlenght="200"
-                    class="materialize-textarea validate"></textarea>
+                    class="materialize-textarea validate">
+                    {{- hike.hike_details -}}
+                </textarea>
                 <label for="hike_details">Hike Details</label>
             </div>
         </div>
@@ -58,7 +62,7 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="far fa-image prefix prefix light-green-text text-darken-4"></i>
-                <input id="hike_image_url" name="hike_image_url" type="text" class="validate" minlength="5"
+                <input id="hike_image_url" name="hike_image_url" type="text" value="{{hike.hike_image_url}}" class="validate" minlength="5"
                     maxlength="150"
                     pattern="^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\%$&'\(\)\*\+,;=.]+$" required>
                 <label for="hike_image_url">Hike Image</label>
@@ -68,6 +72,10 @@
         <!--submit button-->
         <div class="row">
             <div class="col s12 center-align">
+                <!--cancel button-->
+                <a href="{{ url_for('get_hikes') }}" class="btn-large red text-shadow">
+                    Cancel <i class="fas fa-times-circle right"></i>
+                </a>
                 <button type="submit" class="btn-large green darken-1 text-shadow">
                     Edit Hike <i class="fas fa-edit right"></i>
             </div>
