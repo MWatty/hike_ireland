@@ -117,6 +117,13 @@ def add_hike():
     return render_template("add_hike.html")
 
 
+@app.route("/edit_hike/<hike_id>" , methods=["GET", "POST"])
+def edit_hike(hike_id):
+    hike = mongo.db.hikes.find_one({"_id": ObjectId(hike_id)})
+    hikes = mongo.db.categories.find().sort("hike_name", 1)
+    return render_template("edit_hike.html", hike=hike, hikes=hikes)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),

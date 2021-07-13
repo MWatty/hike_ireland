@@ -18,7 +18,7 @@
                 <p><strong>Difficulty:</strong> {{ hike.difficulty_level }}</p>
                 <p class="centre"><em> Created by:</em> {{ hike.created_by }}</p>
                 <a href="" class="btn-small red darken-4">Delete</a>
-                <a href="" class="btn-small  green darken-4">Edit</a>
+                <a href="{{ url_for('edit_hike', hike_id=hike._id)}}" class="btn-small  green darken-4">Edit</a>
             </div>  
         </div>
     </div>
