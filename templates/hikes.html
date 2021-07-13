@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h3 class="light-green-text text-darken-4 centre-align">All Hikes</h3>
+<h3 class="light-green-text text-darken-4 center-align">All Hikes</h3>
 
 <div class="row">
     {% for hike in hikes %}
@@ -17,7 +17,9 @@
                 <p><strong>Distance:</strong> {{ hike.hike_distance }}</p>
                 <p><strong>Difficulty:</strong> {{ hike.difficulty_level }}</p>
                 <p class="centre"><em> Created by:</em> {{ hike.created_by }}</p>
-            </div>
+                <a href="" class="btn-small red darken-4">Delete</a>
+                <a href="" class="btn-small  green darken-4">Edit</a>
+            </div>  
         </div>
     </div>
     {% endfor %}
