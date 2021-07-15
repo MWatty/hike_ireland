@@ -7,14 +7,13 @@
             <h3 class="center-align light-green-text text-darken-1">
                 {{ username }}'s Profile
             </h3>
-            <div class="row">
-                <a href="{{ url_for('add_hike') }}" class="btn-small add-a-hike green darken-4">Add a Hike</a>
+            <div class="col s12 center-align">
+                <a href="{{ url_for('add_hike') }}"  class="btn-large green darken-1 text-shadow"><i
+                    class="fas fa-plus-square right"></i>Add Hike</a>
             </div>
         </div>
     </div>
 </div>
-
-
 
 
 {% for hike in hikes %}
