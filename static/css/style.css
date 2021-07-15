@@ -23,7 +23,7 @@ flashes h4{
 }
 
 .btn-small{
-    margin: 5px;
+    margin-top: 10px;
 }
 
 .function-btn{
@@ -58,3 +58,14 @@ ul.footer-list li{
     display: inline;
     margin: 12px;
 }
+
+.card-title{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.reveal-heading{
+    font-size: 25px;
+}
+
+
