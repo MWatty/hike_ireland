@@ -73,4 +73,6 @@ ul.footer-list li{
 }
 
 
-
+main{
+    min-height: 100%;
+}
