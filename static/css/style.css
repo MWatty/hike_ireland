@@ -2,6 +2,16 @@ body{
     font-family: 'Mukta';
 }
 
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
 .brand-logo{
     margin-left: 20px;
 }
@@ -73,6 +83,6 @@ ul.footer-list li{
 }
 
 
-main{
-    min-height: 100%;
-}
+
+
+  
