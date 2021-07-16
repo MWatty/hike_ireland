@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $('.sidenav').sidenav({edge: "right"});
       $('select').formSelect();
+     
   
 
   validateMaterializeSelect();
@@ -31,3 +32,4 @@ $(document).ready(function(){
       });
   }
 });
+

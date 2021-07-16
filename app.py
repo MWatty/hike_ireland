@@ -1,10 +1,9 @@
 import os
-from flask import (
-    Flask, flash, render_template,
-    redirect, request, session, url_for)
+from flask import Flask, flash, render_template, redirect, request, session, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
+
 if os.path.exists("env.py"):
     import env
 
@@ -37,7 +36,8 @@ def register():
     if request.method == "POST":
         # check if username already exists in db
         existing_user = mongo.db.users.find_one(
-            {"username": request.form.get("username").lower()})
+            {"username": request.form.get("username").lower()}
+        )
 
         if existing_user:
             flash("Username already exists")
@@ -45,7 +45,7 @@ def register():
 
         register = {
             "username": request.form.get("username").lower(),
-            "password": generate_password_hash(request.form.get("password"))
+            "password": generate_password_hash(request.form.get("password")),
         }
         mongo.db.users.insert_one(register)
 
@@ -77,11 +77,10 @@ def login():
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
-    
+
     hikes = mongo.db.hikes.find()
 
-    username = mongo.db.users.find_one(
-        {"username": session["user"]})["username"]
+    username = mongo.db.users.find_one({"username": session["user"]})["username"]
 
     if session["user"]:
         return render_template("profile.html", username=username, hikes=hikes)
@@ -107,7 +106,7 @@ def add_hike():
             "difficulty_level": request.form.get("difficulty_level"),
             "hike_details": request.form.get("hike_details"),
             "hike_image_url": request.form.get("hike_image_url"),
-            "created_by": session["user"]
+            "created_by": session["user"],
         }
         mongo.db.hikes.insert_one(hike)
         flash("Hike Successfully Added")
@@ -125,9 +124,9 @@ def edit_hike(hike_id):
             "difficulty_level": request.form.get("difficulty_level"),
             "hike_details": request.form.get("hike_details"),
             "hike_image_url": request.form.get("hike_image_url"),
-            "created_by": session["user"]
+            "created_by": session["user"],
         }
-        mongo.db.hikes.update({"_id": ObjectId(hike_id)},submit)
+        mongo.db.hikes.update({"_id": ObjectId(hike_id)}, submit)
         flash("Hike Successfully Updated")
         return redirect(url_for("get_hikes"))
 
@@ -144,6 +143,4 @@ def delete_hike(hike_id):
 
 
 if __name__ == "__main__":
-    app.run(host=os.environ.get("IP"),
-            port=int(os.environ.get("PORT")),
-            debug=True)
+    app.run(host=os.environ.get("IP"), port=int(os.environ.get("PORT")), debug=True)

@@ -47,6 +47,15 @@ body{
     background-size: cover;
 }
 
+.flashes h4 {
+    margin: auto;
+    margin-top: 45px;
+    line-height: 3.5;
+    font-size: 30px;
+    color: white;
+    width: 50%;  
+}
+
 .footer-colour{
     background-color: #43a047;
 }
