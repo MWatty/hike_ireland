@@ -129,6 +129,7 @@ def edit_hike(hike_id):
         }
         mongo.db.hikes.update({"_id": ObjectId(hike_id)},submit)
         flash("Hike Successfully Updated")
+        return redirect(url_for("get_hikes"))
 
     hike = mongo.db.hikes.find_one({"_id": ObjectId(hike_id)})
     hikes = mongo.db.categories.find().sort("hike_name", 1)
