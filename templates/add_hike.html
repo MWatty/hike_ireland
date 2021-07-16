@@ -5,13 +5,13 @@
 
 <!--hike name-->
 <div class="row">
-    <form class="col s12" method="POST" action="{{ url_for('add_hike')}}">
+    <form class="col s12 add-hike-form" method="POST" action="{{ url_for('add_hike')}}">
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-hiking prefix light-green-text text-darken-4"></i>
                 <input id="hike_name" name="hike_name" minlength="5" maxlength="100" type="text" class="validate"
                     required>
-                <label for="hike_name">Hike Name</label>
+                <label id="label-hike" for="hike_name">Hike Name</label>
             </div>
         </div>
         <!--county name-->
@@ -20,7 +20,7 @@
                 <i class="fas fa-location-arrow prefix light-green-text text-darken-4"></i>
                 <input id="county_name" name="county_name" minlength="3" maxlength="30" type="tel" class="validate"
                     required>
-                <label for="county_name">County Name</label>
+                <label id="label-hike" for="county_name">County Name</label>
             </div>
         </div>
         <!--hike distance-->
@@ -29,7 +29,7 @@
                 <i class="fas fa-ruler prefix light-green-text text-darken-4"></i>
                 <input id="hike_distance" name="hike_distance" minlength="1" maxlength="100" type="number"
                     class="validate" required>
-                <label for="hike_distance">Distance in km</label>
+                <label id="label-hike" for="hike_distance">Distance in km</label>
             </div>
         </div>
         <!--hike difficulty level-->
@@ -42,7 +42,7 @@
                     <option value="moderate">Moderate</option>
                     <option value="streneous">Streneous</option>
                 </select>
-                <label for="difficulty_level">Difficulty Level</label>
+                <label id="label-hike" for="difficulty_level">Difficulty Level</label>
             </div>
         </div>
         <!--hike details optional-->
@@ -51,7 +51,7 @@
                 <i class="fas fa-align-left prefix light-green-text text-darken-4"></i>
                 <textarea id="hike_details" name="hike_details" minlength="5" maxlenght="200"
                     class="materialize-textarea validate"></textarea>
-                <label for="hike_details">Hike Details</label>
+                <label id="label-hike" for="hike_details">Hike Details</label>
             </div>
         </div>
         <!--hike image-->
@@ -61,7 +61,7 @@
                 <input id="hike_image_url" name="hike_image_url" type="text" class="validate" minlength="5"
                     maxlength="150"
                     pattern="^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\%$&'\(\)\*\+,;=.]+$" required>
-                <label for="hike_image_url">Hike Image</label>
+                <label id="label-hike" for="hike_image_url">Hike Image</label>
                 <div class="helper-text" data-error="Please insert Valid URL Link">Valid URL Link</div>
             </div>
         </div>

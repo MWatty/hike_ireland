@@ -272,6 +272,8 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Code 
 
+* Code on labelling of add hike page https://stackoverflow.com/questions/22720769/how-can-you-change-the-color-of-a-label-in-a-form
+
 ### Media 
 
 ### Other 

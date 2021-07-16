@@ -18,7 +18,7 @@ body{
     font-size: 15px;
 }
 
-flashes h4{
+.flashes h4{
     line-height: 2;
 }
 
@@ -68,6 +68,9 @@ ul.footer-list li{
     font-size: 25px;
 }
 
+#label-hike{
+    color: black;
+}
 
 
 

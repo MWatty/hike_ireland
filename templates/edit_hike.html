@@ -12,7 +12,7 @@
                 <input id="hike_name" name="hike_name" minlength="5" maxlength="100" value="{{hike.hike_name}}"
                 type="text" class="validate"
                     required>
-                <label for="hike_name">Hike Name</label>
+                <label id="label-hike" for>Hike Name</label>
             </div>
         </div>
         <!--county name-->
@@ -22,7 +22,7 @@
                 <input id="county_name" name="county_name" minlength="3" maxlength="30" value="{{hike.county_name}}"
                 type="tel" class="validate"
                     required>
-                <label for="county_name">County Name</label>
+                <label id="label-hike" for="county_name">County Name</label>
             </div>
         </div>
         <!--hike distance-->
@@ -31,7 +31,7 @@
                 <i class="fas fa-ruler prefix light-green-text text-darken-4"></i>
                 <input id="hike_distance" name="hike_distance" minlength="1" maxlength="100000"  value="{{hike.hike_distance}}"
                 type="number" class="validate" required>
-                <label for="hike_distance">Distance in km</label>
+                <label id="label-hike" for="hike_distance">Distance in km</label>
             </div>
         </div>
         <!--hike difficulty level-->
@@ -44,7 +44,7 @@
                     <option value="moderate">Moderate</option>
                     <option value="streneous">Streneous</option>
                 </select>
-                <label for="difficulty_level">Difficulty Level</label>
+                <label id="label-hike" for="difficulty_level">Difficulty Level</label>
             </div>
         </div>
         <!--hike details optional-->
@@ -55,7 +55,7 @@
                     class="materialize-textarea validate">
                     {{- hike.hike_details -}}
                 </textarea>
-                <label for="hike_details">Hike Details</label>
+                <label id="label-hike" for="hike_details">Hike Details</label>
             </div>
         </div>
         <!--hike image-->
@@ -65,7 +65,7 @@
                 <input id="hike_image_url" name="hike_image_url" type="text" value="{{hike.hike_image_url}}" class="validate" minlength="5"
                     maxlength="150"
                     pattern="^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\%$&'\(\)\*\+,;=.]+$" required>
-                <label for="hike_image_url">Hike Image</label>
+                <label id="label-hike" for="hike_image_url">Hike Image</label>
                 <div class="helper-text" data-error="Please insert Valid URL Link">Valid URL Link</div>
             </div>
         </div>
