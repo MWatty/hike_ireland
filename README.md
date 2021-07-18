@@ -172,6 +172,7 @@ Of course, users can upload their own images when adding posts which may lead to
 
 * Hiking logo in navbar too close to the top in on smaller devices increased margin on top to rectify issue. 
 
+* Label on search bar not fitting screen below 320px created media query to remove label 
 
 #### Issues identified during testing 
 

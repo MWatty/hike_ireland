@@ -93,6 +93,11 @@ ul.footer-list li{
      }
     }
   
-
+    @media only screen and (max-width: 320px) {
+            label {
+                display: none;
+            }
+        }
+       
 
   
