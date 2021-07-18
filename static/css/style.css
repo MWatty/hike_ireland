@@ -12,10 +12,6 @@ body {
     flex: 1 0 auto;
   }
 
-.brand-logo{
-    margin-left: 20px;
-}
-
  a:hover {
     color: #e0e0e0;
   }

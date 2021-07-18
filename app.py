@@ -135,6 +135,7 @@ def edit_hike(hike_id):
     return render_template("edit_hike.html", hike=hike)
 
 
+
 @app.route("/delete_hike/<hike_id>")
 def delete_hike(hike_id, *user):
     mongo.db.hikes.remove({"_id": ObjectId(hike_id)})

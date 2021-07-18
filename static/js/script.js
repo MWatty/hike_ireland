@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('.sidenav').sidenav({edge: "right"});
       $('select').formSelect();
       $('.modal').modal();
-      $('#difficulty_level : selected').val();
+      //$('#difficulty_level : selected').val();
   
 
   validateMaterializeSelect();
