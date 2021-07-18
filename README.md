@@ -73,9 +73,9 @@ All wireframes were created using [Balsamiq](http://balsamiq.com)
 
 Please find full PDF versions of wireframes and sketches below:
 
-* [Mobile Wireframe]
-* [Tablet Wireframe]
-* [Desktop Wireframe]
+* [Mobile Wireframe](https://github.com/MWatty/hike_ireland/blob/main/static/assets/wireframes/HIKE%20IRELAND%20-%20MOBILE.pdf)
+* [Tablet Wireframe](https://github.com/MWatty/hike_ireland/blob/main/static/assets/wireframes/HIKE%20IRELAND%20-%20TABLET.pdf)
+* [Desktop Wireframe](https://github.com/MWatty/hike_ireland/blob/main/static/assets/wireframes/HIKE%20IRELAND%20-%20DESKTOP.pdf)
 
 ### Surface 
 
@@ -118,11 +118,12 @@ Of course, users can upload their own images when adding posts which may lead to
 ### Languages
 
 * [HTML5](https://www.graycelltech.com/why-use-html-5/) was used as this is the latest Hypertext Markup Language and this is the standard language for describing the contents and appearance of Web Pages.
-  All major browsers offer HTML5 support. 
 
 * [CSS](https://www.w3schools.com/css/css_intro.asp) is used to define styles for web pages, including the design, layout and variations in display for different devices and screen sizes.
 
 * [JavaScript](https://www.w3schools.com/js/DEFAULT.asp) is used to program the behaviour of webpages.
+
+* [Python](https://www.python.org/) is used to ensure interaction between the webpages and the database. 
 
 ### Libraries 
 
