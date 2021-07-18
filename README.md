@@ -4,7 +4,7 @@ Milestone Project 3 - Backend Development - Code Institute
 
 ## Demo 
 
-A live demo can be found [here]
+A live demo can be found [here](https://hike-ireland-project.herokuapp.com/)
 
 ## UX 
 
