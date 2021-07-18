@@ -126,7 +126,7 @@ Of course, users can upload their own images when adding posts which may lead to
 
 ### Libraries 
 
-* [Bootstrap](https://getbootstrap.com/) was used as this lends itself to quickly design and customize mobile first-sites.
+* [Materialize](https://materializecss.com/) is a design language that combines the classic principles of successful design along with innovation and technology. Google's goal is to develop a system of design that allows for a unified user experience across all their products on any platform.
 
 * [Google-Fonts](https://fonts.google.com/) were used to style the website fonts and ensure they complimented each other.
 
@@ -145,10 +145,6 @@ Of course, users can upload their own images when adding posts which may lead to
 * [GitHub](https://github.com) was used as a hosting platform for version control.
 
 ### Tools and Other Resources 
-
-* [Pixlr](https://pixlr.com/) was used to resize the images for optimum size for web use (max 798 x 1280).
-
-* [TinyJPG](https://tinyjpg.com/) was used to compress the image files.
 
 * [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) was used to edit pages and diagnose problems quickly. 
 
