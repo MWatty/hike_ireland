@@ -15,7 +15,6 @@
     </div>
 </div>
 
-
 {% for hike in hikes %}
 <div class="row">
     {% if session.user|lower == hike.created_by|lower%}
