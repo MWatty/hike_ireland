@@ -105,6 +105,35 @@ Of course, users can upload their own images when adding posts which may lead to
 
 ### Final Project Variations 
 
+#### Navigation Bar
+
+* The navigation bar was amended from what was originally planned. 
+* The style used is much more simplistic and there is no text and the search bat has been places underneath. 
+* The reason for this is to keep the site clean and minimalist looking. 
+* A home button was also added to the navigation to ensure that the user always has the option to return to the main landing page. 
+
+#### Main Container Landing Page
+
+* There was a slight deviation on the landing page initially it was planned to have 3 cards per row, but 2 cards were deemed to be more aesthetically pleasing that 2 and it allowed more space for the imagery to take centre stage. 
+* A background image was also applied throughout the website playing on the theme and also streamlining the movement between pages. 
+
+#### Footer 
+ 
+* The footer was amended to be be more simplistic and more angular rather than having all items in a central position. 
+
+
+#### Individual Hike Page 
+
+* This was not included as it was deemed unnecessary and burdensome for the user, instead it was decided to use the card reveal to provide the information about the hikes that is required. It also allows for some user interactivity by clicking on the cards. 
+
+#### Profile Page
+
+* Within this page it was decided to follow through with the card format thus keeping a sense of familiarity for the user throughout. 
+
+#### Edit Hike 
+
+* The edit hike page was amended to mirror the add hike page allowing the user to edit any parts of the hike they wish to. 
+
 
 ## Features 
 
