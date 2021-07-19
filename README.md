@@ -216,7 +216,7 @@ Of course, users can upload their own images when adding posts which may lead to
 
 * [Browserling](https://www.browserling.com/) was used for cross browser testing.
 
-* [Am I responsive](http://ami.responsivedesign.is/#) was used to create a mock up.
+* [Am I responsive](http://ami.responsivedesign.is) was used to create a mock up.
 
 * [Web Formatter](https://webformatter.com/html) used to correctly indent files. 
 
@@ -332,21 +332,27 @@ the results below related to the use of 'let' which are is available in ES6, thi
 ![Add Hike Page](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/Add%20Hike%20.png "Add Hike Page")
 
 
-
-
-   
 ### Further Testing
+
+* The Website was tested on Google Chrome, Firefox, Opera Microsoft Edge and Safari browsers.
+* A large amount of testing was done to ensure that all pages were linking correctly.
+* Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 
 #### Devices 
 
+Tested the game functionality on the devices listed below: 
 
+* Mac Book Pro 
+* iPhone 11 
+* Honor 10 
+* Lenovo Laptop (Windows 10) 
 
 #### Issues identified during testing 
 
-* Hiking logo in navbar too close to the top in on smaller devices increased margin on top to rectify issue. 
+* Label / Placeholder on the search bar was not fitting on screens below 320px created media query to remove label/placeholder. 
 
-* Label on search bar not fitting screen below 320px created media query to remove label 
+* 
 
 ### Features Tested 
 
