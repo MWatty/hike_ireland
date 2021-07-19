@@ -278,7 +278,7 @@ the results below related to the use of 'let' which are is available in ES6, thi
     2. Users can also add their own images to the site.  
     3. A pallette of greens are used throughtout to add to the attractiveness of the site and marry with the theme. 
 
-![Profile Page](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/Profile%20Page.png"Profile Page")
+![Profile Page](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/Profile%20Page.png "Profile Page")
 
 3.  As a visitor, I want the sire to be accessible and responsive on all devices.
 
