@@ -222,6 +222,10 @@ Of course, users can upload their own images when adding posts which may lead to
 
 * [Web Formatter](https://webformatter.com/html) used to correctly indent files. 
 
+* [Heroku](https://id.heroku.com) was used to delpoy the app. 
+
+* [MongoDB](https://www.mongodb.com/) was used as a doucment database. 
+
 ## Testing 
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project. 
@@ -357,6 +361,8 @@ Tested the game functionality on the devices listed below:
 * 
 
 ### Features Tested 
+
+
 
 ## Deployment 
 
