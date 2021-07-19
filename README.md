@@ -239,21 +239,99 @@ the results below related to the use of 'let' which are is available in ES6, thi
 
 #### Visitors 
 
-* As a visitor, I want to understand the main purpose of the site. 
-* As a visitor, I want the site to be simple to navigate.
-* As a visitor, I want to quickly find information about hikes. 
-* As a visitor, I want register an account so that I can add, update, edit and delete information I have provided.  
-* As a visitor, I want the site to be visually appealing.
-* As a visitor, I want the sire to be accessible and responsive on all devices. 
+ 1. As Visitor, I want to understand the main purpose of the site. 
+
+    1. Upon entering the site, users are greeted by the navigation bar with the title and lots of images, ensuring clarity on the purpose of the site, 
+    2. The user has three options, explore the hikes that are already there or log in / register. 
+    3. In a simple click the user can explore the hike information that is available. 
+
+![Landing Page](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/Landing%20Page.png "Landing Page")
+
+
+ 2. As a visitor, I want the site to be simple to navigate.
+
+    1. Upon entering the site, there are simple navigation options in the nav bar. 
+    2. Everypage can be reached within 3 clicks. 
+    3. The website is intuitive to the users needs and there is a flow to the navigation process. 
+
+![Profile Page](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/Profile%20Page.png "Profile Page")
+
+ 3. As a visitor, I want to quickly find information about hikes. 
+
+    1. Upon entering the site, there are cards on display with hike details. 
+    2. Without logging in or registering users can discover details relating to the hink.
+    3. Using the card reveal users can gather more in depth informaiton about the available hikes. 
+
+![Hike Details](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/HIke%20Details%20.png "Hike Details")
+
+ 3.  As a visitor, I want register an account so that I can add, update, edit and delete information I have provided. 
+
+    1. Upon entering the site, the user has clear option to log in to their account. 
+    2. New users also have the option to register their account. 
+    3. Once logged in / registered the user can update, edit and delete their hikes. 
+
+![Log In  Page](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/Log%20In.png "Log In Page")
+
+ 3.  As a visitor, I want the site to be visually appealing.
+
+    1. Upon entering the site, the user is met with a beautiful abckground image, this is carried throughout the site. 
+    2. Users can also add their own images to the site.  
+    3. A pallette of greens are used throughtout to add to the attractiveness of the site and marry with the theme. 
+
+![Profile Page](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/Profile%20Page.png"Profile Page")
+
+3.  As a visitor, I want the sire to be accessible and responsive on all devices.
+
+    1. The website has been designed to be responsive on all devices.  
+
+![Ipad Page](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/Ipad.png "Ipad Page")
+
+
 
 #### Site Owner 
 
-* As a site owner, I want this site to be responsive so that visitors can have a good experience on all devices. 
-* As a site owner, I want visitors to find this site visually appealing.  
-* As a site owner, I want visitors to enjoy and interact with the site.
-* As a site owner, I want visitors to return to the site and provide information on hikes. 
-* As a site owner, I want to create a community where hikers come together and share information. 
+1.  As a site owner, I want this site to be responsive so that visitors can have a good experience on all devices.
+
+    1. The website has been designed to be responsive on all devices. 
     
+
+![Iphone Page](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/Iphone%20.png "IphonePage")
+
+2.  As a site owner, I want visitors to find this site visually appealing.  
+
+    1. The users are met with beautiful imagery throughout the site. 
+    2. There is also a colour theme throughout inclusive of fonts designed to be appealing to the user.  
+   
+
+![Delete Page](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/Delete%20HIke%20.png "Delete Page")
+
+4.  As a site owner, I want visitors to enjoy and interact with the site.
+
+    1. Users can utilise the search function. 
+    2. Users can create and a profile to update, create and delete hikes.  
+    3. Flash messages appear when users update, create or delete hikes all adding to the interactivity of the site.  
+
+![Flash Page](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/Flash%20Message%20.png "Flash Page")
+
+5.  As a site owner, I want visitors to return to the site and provide information on hikes. 
+
+    1. In order to encourage users to return there is a log in function where they can view their own profile.  
+    2. Users are also encouraged to register an account.  
+    3. The simplicity of the forms aim to encourage returning to the site.  
+
+![Edit Hike Page](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/Edit%20Hike.png "Edit Hike Page")
+
+6.  As a site owner, I want to create a community where hikers come together and share information. 
+
+    1. Upon entering the site, users are encourage to create an account with the aim of encouraging users to create hikes. 
+    2. Users can also access all of the hikes created by other users.  
+    3. Users can quickly get a snapshot of hikes and will be encourage by its simplicity of the add function to add their own hikes. 
+
+![Add Hike Page](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/Add%20Hike%20.png "Add Hike Page")
+
+
+
+
    
 ### Further Testing
 
