@@ -139,8 +139,44 @@ Of course, users can upload their own images when adding posts which may lead to
 
 ### Existing Features 
 
-### Features left to implement 
+*	This website is responsive on all device 
+*	There are interactive elements throughout the website 
+*	This website is linked to a MongoDB database
+*	Users have to log in or register to Add, Update and Delete Hikes. 
 
+### Landing Page
+
+* A navigation bar is, as expected, located across the top of the page, this notifies the user of the home page, log in and registration 
+* There is a search function should the user wish to search for an hike by name or location. 
+* There is also a card deck with details of the hikes that have been uploaded and the user can gather details from here. 
+* The footer container links to social media and a copyright symbol. 
+
+### Log In / Registration 
+
+* These are standard simple log in / registration pages allowing the user to simply move navigate between each.
+
+### Profile Page
+
+* This page identified the user 
+* Shows the hikes the user has added 
+* A button on this page prompts the user to add more hikes 
+* Also allows the user to edit or delete hikes taking them to an edit page or confirming a deletion should they wish to do so. 
+
+### Add Hike 
+
+* A form is is used here to gather information from the user, once complete this is uploaded to the maing landing page and the users profile. 
+
+### Edit Hike 
+
+* This is the same form format as above, although the fields have been populated with the information already inputted onto the system 
+
+### Features left to implement
+
+* An interactive map of Ireland showing the exact locations of the hikes 
+* User reviews of the hikes
+* Additional features such as what available in terms of facilities near the hikes i.e toilets, campgrounds etc 
+* A shopping feature could be added 
+* A weather feature of the current weather in each of the locations. 
 
 ## Technologies Used 
 
@@ -186,8 +222,10 @@ Of course, users can upload their own images when adding posts which may lead to
 
 ## Testing 
 
-
 ### Testing User Stories from User Experience (UX) Section
+
+
+
 
 #### Visitors 
 
