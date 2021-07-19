@@ -264,15 +264,17 @@ the results below related to the use of 'let' which are is available in ES6, thi
 
 ![Hike Details](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/HIke%20Details%20.png "Hike Details")
 
- 4.  As a visitor, I want register an account so that I can add, update, edit and delete information I have provided. 
+ 
+4.  As a visitor, I want register an account so that I can add, update, edit and delete information I have provided. 
 
     1. Upon entering the site, the user has clear option to log in to their account. 
-    2. New users also have the option to register their account. 
+    2. New users also have the option to register their account.
     3. Once logged in / registered the user can update, edit and delete their hikes. 
 
 ![Log In  Page](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/Log%20In.png "Log In Page")
 
- 5.  As a visitor, I want the site to be visually appealing.
+
+5.  As a visitor, I want the site to be visually appealing.
 
     1. Upon entering the site, the user is met with a beautiful abckground image, this is carried throughout the site. 
     2. Users can also add their own images to the site.  
@@ -305,7 +307,7 @@ the results below related to the use of 'let' which are is available in ES6, thi
 
 ![Delete Page](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/Delete%20HIke%20.png "Delete Page")
 
-4.  As a site owner, I want visitors to enjoy and interact with the site.
+3.  As a site owner, I want visitors to enjoy and interact with the site.
 
     1. Users can utilise the search function. 
     2. Users can create and a profile to update, create and delete hikes.  
@@ -313,7 +315,7 @@ the results below related to the use of 'let' which are is available in ES6, thi
 
 ![Flash Page](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/Flash%20Message%20.png "Flash Page")
 
-5.  As a site owner, I want visitors to return to the site and provide information on hikes. 
+4.  As a site owner, I want visitors to return to the site and provide information on hikes. 
 
     1. In order to encourage users to return there is a log in function where they can view their own profile.  
     2. Users are also encouraged to register an account.  
@@ -321,7 +323,7 @@ the results below related to the use of 'let' which are is available in ES6, thi
 
 ![Edit Hike Page](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/Edit%20Hike.png "Edit Hike Page")
 
-6.  As a site owner, I want to create a community where hikers come together and share information. 
+5.  As a site owner, I want to create a community where hikers come together and share information. 
 
     1. Upon entering the site, users are encourage to create an account with the aim of encouraging users to create hikes. 
     2. Users can also access all of the hikes created by other users.  
