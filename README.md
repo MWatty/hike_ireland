@@ -264,7 +264,7 @@ the results below related to the use of 'let' which are is available in ES6, thi
 
 ![Hike Details](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/HIke%20Details%20.png "Hike Details")
 
- 3.  As a visitor, I want register an account so that I can add, update, edit and delete information I have provided. 
+ 4.  As a visitor, I want register an account so that I can add, update, edit and delete information I have provided. 
 
     1. Upon entering the site, the user has clear option to log in to their account. 
     2. New users also have the option to register their account. 
@@ -272,7 +272,7 @@ the results below related to the use of 'let' which are is available in ES6, thi
 
 ![Log In  Page](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/Log%20In.png "Log In Page")
 
- 3.  As a visitor, I want the site to be visually appealing.
+ 5.  As a visitor, I want the site to be visually appealing.
 
     1. Upon entering the site, the user is met with a beautiful abckground image, this is carried throughout the site. 
     2. Users can also add their own images to the site.  
@@ -280,7 +280,7 @@ the results below related to the use of 'let' which are is available in ES6, thi
 
 ![Profile Page](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/Profile%20Page.png "Profile Page")
 
-3.  As a visitor, I want the sire to be accessible and responsive on all devices.
+6.  As a visitor, I want the sire to be accessible and responsive on all devices.
 
     1. The website has been designed to be responsive on all devices.  
 
