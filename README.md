@@ -2,6 +2,8 @@
 
 Milestone Project 3 - Backend Development - Code Institute 
 
+![MS3 Hike Ireland](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/Mock%20Up.png "MS3 Hike Ireland")
+
 ## Demo 
 
 A live demo can be found [here](https://hike-ireland-project.herokuapp.com/)
