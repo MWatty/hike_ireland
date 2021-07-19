@@ -222,15 +222,37 @@ Of course, users can upload their own images when adding posts which may lead to
 
 ## Testing 
 
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project. 
+
+* [WC3 Markup Validation Serivce](https://validator.w3.org/#validate_by_input) - [Initial Results with error](https://github.com/MWatty/hike_ireland/blob/main/static/assets/validation%20screenshots/HTML%20Validation1.png "Initial Results with error")
+ & [Results with no errors](https://github.com/MWatty/hike_ireland/blob/main/static/assets/validation%20screenshots/HTML%20Validation%202.png "Results with no errors")
+
+* [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) - [Results](https://github.com/MWatty/hike_ireland/blob/main/static/assets/validation%20screenshots/CSS%20Validation.png "Results")
+
+JShint was used to detect errors and potential problems within the JavaScript Code. The only issues identified in JShint as per 
+the results below related to the use of 'let' which are is available in ES6, this is not a cause for concern. 
+
+* [JShint](https://jshint.com/) - [Results Screenshot](https://github.com/MWatty/hike_ireland/blob/main/static/assets/validation%20screenshots/JS%20Validation.png "Results Screenshot ")
+
+
 ### Testing User Stories from User Experience (UX) Section
-
-
-
 
 #### Visitors 
 
+* As a visitor, I want to understand the main purpose of the site. 
+* As a visitor, I want the site to be simple to navigate.
+* As a visitor, I want to quickly find information about hikes. 
+* As a visitor, I want register an account so that I can add, update, edit and delete information I have provided.  
+* As a visitor, I want the site to be visually appealing.
+* As a visitor, I want the sire to be accessible and responsive on all devices. 
+
 #### Site Owner 
 
+* As a site owner, I want this site to be responsive so that visitors can have a good experience on all devices. 
+* As a site owner, I want visitors to find this site visually appealing.  
+* As a site owner, I want visitors to enjoy and interact with the site.
+* As a site owner, I want visitors to return to the site and provide information on hikes. 
+* As a site owner, I want to create a community where hikers come together and share information. 
     
    
 ### Further Testing
@@ -238,12 +260,13 @@ Of course, users can upload their own images when adding posts which may lead to
 
 #### Devices 
 
-* Hiking logo in navbar too close to the top in on smaller devices increased margin on top to rectify issue. 
 
-* Label on search bar not fitting screen below 320px created media query to remove label 
 
 #### Issues identified during testing 
 
+* Hiking logo in navbar too close to the top in on smaller devices increased margin on top to rectify issue. 
+
+* Label on search bar not fitting screen below 320px created media query to remove label 
 
 ### Features Tested 
 
