@@ -226,6 +226,8 @@ Of course, users can upload their own images when adding posts which may lead to
 
 * [MongoDB](https://www.mongodb.com/) was used as a doucment database. 
 
+* [Black](black.vercel.app) was used to format the Python code. 
+
 ## Testing 
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project. 
@@ -422,7 +424,6 @@ the card reveal provides the hike details when the user clicks on the card.
 * Cancel button is working as expected. 
 
 
-
 ## Deployment 
 
 ### Forking the GitHub Repository
@@ -503,19 +504,31 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Content 
 
-* Content was written by the developer Maura Watkinson. 
+* [Wikipedia](https://www.wikipedia.org/) was used to provide informaiton for the Hike Details created by the user Maura Watkinson. 
 
 ### Code 
 
-* Code on labelling of add hike page https://stackoverflow.com/questions/22720769/how-can-you-change-the-color-of-a-label-in-a-form
+* [Code Institute](https://learn.codeinstitute.net/ci_program/diplomainsoftwaredevelopment) backend development, putting it all together mini project tutorial was followed and used to assist in the creation of this website. This was greatly modified to fit in with the design requirements of this website. 
+
+* [Stack Overflow](https://stackoverflow.com/questions/22720769/how-can-you-change-the-color-of-a-label-in-a-form)
 
 ### Media 
 
+* Background image by <a href="https://unsplash.com/@aridley88?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andrew Ridley</a> on <a href="https://unsplash.com/s/photos/ireland?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+* All images used are taken from various URL's on line when searching for the relevant hike.
+
 ### Other 
+
 * <i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ### Acknowledgements 
 
+* Thank you to the tutors at Code Institute for their support and guidance in the creation of this website.
+
+* Thank you to the Code Institute Slack Community for their tips and assistance throughout the course of creating this game.
+
+* A big thank you to my mentor Sandeep Aggarwal for his help throughout this project.
 
 
 
