@@ -39,10 +39,10 @@
             <div class="input-field col s12">
                 <i class="fas fa-shoe-prints prefix light-green-text text-darken-4"></i>
                 <select id="difficulty_level"  name="difficulty_level" class="validate" required>
-                    <option value="" disabled selected>Choose your option</option>
-                    <option value="easy">Easy</option>
-                    <option value="moderate">Moderate</option>
-                    <option value="streneous">Streneous</option>
+                    <option value="" disabled>Choose your option</option>
+                    <option value="easy"{% if hike.difficulty_level == "easy" %}selected{% endif %}>Easy</option>
+                    <option value="moderate" {% if hike.difficulty_level == "moderate" %}selected{% endif %}>Moderate</option>
+                    <option value="streneous"{% if hike.difficulty_level == "streneous" %}selected{% endif %}>Streneous</option>
                 </select>
                 <label id="label-hike" for="difficulty_level">Difficulty Level</label>
             </div>

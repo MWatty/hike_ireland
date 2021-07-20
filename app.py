@@ -28,7 +28,7 @@ def get_hikes():
 def search():
     query = request.form.get("query")
     hikes = list(mongo.db.hikes.find({"$text": {"$search": query}}))
-    return render_template("hikes.html", hikes=hikes)
+    return render_template("hikes.html", hikes=hikes, query=query)
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -144,4 +144,6 @@ def delete_hike(hike_id, *user):
 
 
 if __name__ == "__main__":
-    app.run(host=os.environ.get("IP"), port=int(os.environ.get("PORT")), debug=True)
+    app.run(host=os.environ.get("IP"), port=int(os.environ.get("PORT")), debug=os.environ.get("DEBUG", "false") == "true")
+
+
