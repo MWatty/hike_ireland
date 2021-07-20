@@ -358,9 +358,68 @@ Tested the game functionality on the devices listed below:
 
 * Label / Placeholder on the search bar was not fitting on screens below 320px created media query to remove label/placeholder. 
 
-* 
+* Social media links did not open in a new tab when tested 
 
 ### Features Tested 
+
+#### Navigation Bar 
+
+* "Hike Ireland" acts as a home button throughout together with the home button, both funcitonining as expected. 
+* Both the log in and registration links are acting as expected. 
+* Once logged in / registered the links in the vavigatiown bar are fully functinal and direct the user accordingly.]\ 
+* The log out function is operating as exptcted. 
+
+#### Search Bar
+
+* This search function allows users to search by hike name or location, this has been extensively tested and is working as desired. 
+* When the user inputs a search the word / words stay in the search bar until the user resets, this is working as programmed. 
+* Reset, when pressed this clears the search bar and is working as required. 
+
+#### Cards 
+
+* All cards on the landing page function as required when the user is not looged in. The informaiton is available and 
+the card reveal provides the hike details when the user clicks on the card. 
+* Once the user is logged in there is additional functionality whereby the user can edit and delete hikes. 
+* Edit button, when clicked this taked the user to the edit hike page wherby they can edit the hikes they have added. 
+* Delete button, when clicked a modal pops up for confirmation that a post is to be deleted, this is working correctly. 
+* When editing, deleting a hike teh user is greeted by a flash message and this is operating as expected. 
+
+#### Footer 
+
+* All links working as ddesired wihtin the footer element. 
+
+#### Log In 
+
+* Log in working as arequired when inputting username and password, taken to profile page once completed. 
+* Flash message if incorrect username or password entered. 
+* Link to register account working correctly.
+
+#### Register 
+
+* Registration page working as required.
+* Flash messages working should user enter username that is already taken. "Username already exisits" 
+* Link to log in page re-directing correctly. 
+
+#### Profile Page 
+
+* Welcome message displaying as expected when user logs in. 
+* Username is displayed at the top of the page as required. 
+* Add hike button functioning correctly and taking user to the add hike page. 
+* Only user hikes that they have created are on display on this page. 
+* As above funciton buttons on this page are working as expected, "Edit" and "Delete". 
+
+#### Add Hike 
+
+* All parts of the form are working as expected. 
+* Add Hike buttons is functioning correctly and hikes are being added to the correct pages. 
+
+#### Edit Hike 
+
+* All parts of the form are functioning as expected. 
+* The form is autopopulating with the correct information to allow the user to edit simply what they need to. 
+* Done button is working and re-directing correctly and hike is being updated as per the instruction of the user.
+* Flash messages are appearing as expected with the correct messaging. 
+* Cancel button is working as expected. 
 
 
 
