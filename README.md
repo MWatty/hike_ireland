@@ -366,18 +366,6 @@ Tested the game functionality on the devices listed below:
 
 ## Deployment 
 
-### GitHub Pages
-
-The project was deployed to GitHub Pages using the following steps...
-
-1. Log in to GitHub and locate the [GitHub Repository](https://https://github.com/MWatty/Hike-Ireland)
-2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-   - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
-3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
-4. Under "Source", click the dropdown called "None" and select "Master Branch".
-5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://github.com/MWatty/Hike-Ireland) in the "GitHub Pages" section.
-
 ### Forking the GitHub Repository
 
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps.
@@ -420,10 +408,14 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 4. Create required **collections** in the database named.
 
 ### Setting Up the Environment Variables
-1. Create a file called **.gitignore** in the root directory of your project
-2. Add the following text in your .gitignore file: **env.py**
-3. Create a file called **env.py**. This will contain all your environment variables
-4. Create your own personal secret key and password. In **env.py** add the following text and replace **YOURPASSWORD**, **YOUR-CLUSTER-NAME**, **YOUR-DATABASE-NAME** and **YOURSECRETKEY**    
+
+1. Create a file called **env.py**. This will contain all your environment variables
+2. In **env.py** add the following variables:
+  * **YOURPASSWORD**
+  * **YOUR-CLUSTER-NAME**
+  * **YOUR-DATABASE-NAME**
+  * **YOURSECRETKEY**    
+  * **DEBUG**: Set to `true` to enabled debug mode.  
 
 ### Run the App 
 1. Open your terminal window in your IDE
@@ -443,7 +435,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
     - IP: 0.0.0.0
     - PORT: 5000
     - MONGO_DBNAME: YOUR-DATABASE-NAME
-    - MONGO_URI: mongodb+srv://root:**YOURPASSWORD**@**YOUR-CLUSTER-NAME**.2qobt.mongodb.net/**YOUR-DATABASE-NAME**?retryWrites=true&w=majority
+    - MONGO_URI
     - SECRET_KEY: YOURSECRETKEY
 11. Click on **Open app** in the right corner of your Heroku account, the application will open in a new window
 12. The live link is available from the address bar
