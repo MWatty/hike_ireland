@@ -14,6 +14,7 @@ Milestone Project 3 - Backend Development - Code Institute
     + [Scope](#scope)
     + [Structure](#structure)
     + [Skeleton](#skeleton)
+      - [Database Schema](#database-schema)
     + [Surface](#surface)
       - [Design](#design)
       - [Colour](#colour)
@@ -70,12 +71,12 @@ Milestone Project 3 - Backend Development - Code Institute
     + [Other](#other)
     + [Acknowledgements](#acknowledgements)
 
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 ## Demo 
 
 A live demo can be found [here](https://hike-ireland-project.herokuapp.com/)
-
-
 
 ## UX 
 
@@ -147,6 +148,8 @@ Please find full PDF versions of wireframes and sketches below:
 * [Mobile Wireframe](https://github.com/MWatty/hike_ireland/blob/main/static/assets/wireframes/HIKE%20IRELAND%20-%20MOBILE.pdf)
 * [Tablet Wireframe](https://github.com/MWatty/hike_ireland/blob/main/static/assets/wireframes/HIKE%20IRELAND%20-%20TABLET.pdf)
 * [Desktop Wireframe](https://github.com/MWatty/hike_ireland/blob/main/static/assets/wireframes/HIKE%20IRELAND%20-%20DESKTOP.pdf)
+
+#### Database Schema
 
 ### Surface 
 
@@ -248,6 +251,7 @@ Of course, users can upload their own images when adding posts which may lead to
 * Additional features such as what available in terms of facilities near the hikes i.e toilets, campgrounds etc 
 * A shopping feature could be added 
 * A weather feature of the current weather in each of the locations. 
+* The addition of a fall back image should there be any issues with the user uploading a URL for their image. 
 
 ## Technologies Used 
 
