@@ -1,11 +1,12 @@
-body {
-    font-family: "Mukta";
-}
 
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    background-image: url("https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Mukta";
 }
 
 main {
@@ -24,10 +25,6 @@ a:hover {
     font-size: 15px;
 }
 
-.flashes h4 {
-    line-height: 2;
-}
-
 .btn-small {
     margin-top: 10px;
 }
@@ -37,10 +34,17 @@ a:hover {
     margin: 5px;
 }
 
-body {
-    background-image: url("https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80");
-    background-repeat: no-repeat;
-    background-size: cover;
+.card-title {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.reveal-heading {
+    font-size: 25px;
+}
+
+#label-hike {
+    color: black;
 }
 
 .flashes h4 {
@@ -72,19 +76,6 @@ body {
 ul.footer-list li {
     display: inline;
     margin: 12px;
-}
-
-.card-title {
-    text-align: center;
-    margin-top: 5px;
-}
-
-.reveal-heading {
-    font-size: 25px;
-}
-
-#label-hike {
-    color: black;
 }
 
 @media only screen and (max-width: 600px) {
