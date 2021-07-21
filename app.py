@@ -131,7 +131,6 @@ def edit_hike(hike_id):
         return redirect(url_for("get_hikes"))
 
     hike = mongo.db.hikes.find_one({"_id": ObjectId(hike_id)})
-    # hikes = mongo.db.hikes.find().sort("hike_name", 1)
     return render_template("edit_hike.html", hike=hike)
 
 
