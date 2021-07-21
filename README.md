@@ -81,13 +81,13 @@ A live demo can be found [here](https://hike-ireland-project.herokuapp.com/)
 
 ### Strategy 
 
-Hike Ireland - is as per the name a website with informaiton on Hikes around Ireland. It's a 
-website that allows hikers, walkers, ramblers and everyone else in between to come together and 
+Hike Ireland - is, as the name suggests, a website that contains information on Hikes around Ireland. It's a 
+website that allows hikers, walkers, ramblers and everyone in between to come together and 
 share details on the wonderful hikes in Ireland. 
 
 This website is for everyone that is looking for a simple, easy to 
 understand and easy to navigate website with details on hikes in Ireland. This is achieved by 
-having a simple, clear funcitonal easy to understand website. Visitors will want to come back 
+having a simple, clear functional easy to understand website. Visitors will want to come back 
 time and time again to gather information, provide information and learn more about hikes all over Ireland. 
 
 ### User Stories 
@@ -111,8 +111,8 @@ time and time again to gather information, provide information and learn more ab
 
 ### Scope
 
-* For users, the site owner wanted to create a website that acts as a one stop shop for details on 
-hikes around the Country, currently there are no such sites where hikers, walkers etc can gather required information 
+* For users, the site owner wants to create a website that acts as a one stop shop for details on 
+hikes around the country, currently there are no such sites where hikers, walkers etc can gather required information 
 all in one place. 
 
 ### Structure 
@@ -120,8 +120,8 @@ all in one place.
 * In order to meet the expectation of "Hike Ireland" users,  the website aims to stick to convention 
 in its layout and architecture.
 
-* There is a header  and footer section on each page, with a "Hike Ireland" heading. Clicking on this
-heading will take the user back to the landing page of the website and this is, as mentioned above, 
+* There is a header and footer section on each page, with a "Hike Ireland" title in the header. Clicking on this
+title will take the user back to the landing page of the website and this is, as mentioned above, 
 an expected and understood convention. 
 
 * There is a Log In / Registration Feature which enables users to create an account and create, update, edit and delete
@@ -192,7 +192,7 @@ This was chosen using [google fonts](https://fonts.google.com/)
 
 #### Images 
 
-* The background images used throughout the website has been carefully chosen to ensure the theme of the website is maintained throughout. 
+* The background image used throughout the website has been carefully chosen to ensure the theme of the website is maintained throughout. 
 Of course, users can upload their own images when adding posts which may lead to some differences in overall styling.  
 
 ### Final Project Variations 
@@ -206,17 +206,18 @@ Of course, users can upload their own images when adding posts which may lead to
 
 #### Main Container Landing Page
 
-* There was a slight deviation on the landing page initially it was planned to have 3 cards per row, but 2 cards were deemed to be more aesthetically pleasing as it allowed more space for the imagery to take centre stage. 
+* There was a slight deviation on the landing page, initially it was planned to have 3 cards per row, but 2 cards were deemed to be more aesthetically pleasing, as it allowed more space for the imagery to take centre stage. 
 * A background image was also applied throughout the website playing on the theme and also streamlining the movement between pages. 
 
 #### Footer 
  
-* The footer was amended to be be more simplistic and more angular rather than having all items in a central position. 
+* The footer was amended to be more simplistic and more angular rather than having all items in a central position. 
 
 
 #### Individual Hike Page 
 
-* This was not included as it was deemed unnecessary and burdensome for the user, instead it was decided to use the card reveal to provide the information about the hikes that is required. It also allows for some user interactivity by clicking on the cards. 
+* This was not included as it was deemed unnecessary and burdensome for the user, instead it was decided to use the card reveal to provide the information about the hikes.
+It also allows for some user interactivity by clicking on the cards. 
 
 #### Profile Page
 
@@ -238,9 +239,9 @@ Of course, users can upload their own images when adding posts which may lead to
 
 ### Landing Page
 
-* A navigation bar is, as expected, located across the top of the page, this notifies the user of the home page, log in and registration. 
+* A navigation bar is, as expected, located across the top of the page, this notifies the user of the home, log in and registration pages. 
 * There is a search function should the user wish to search for a hike by name or location. 
-* There is also a card deck with details of the hikes that have been uploaded and the user can gather details from here. 
+* There is a card deck with details of the hikes that have been uploaded and the user can gather details from here. 
 * The footer container links to social media and a copyright symbol. 
 
 ### Log In / Registration 
@@ -249,24 +250,24 @@ Of course, users can upload their own images when adding posts which may lead to
 
 ### Profile Page
 
-* This page welcomes the user and clear shows that this is teh users own profile page. 
-* Shows the hikes the user has added.
+* This page welcomes the user and clearly shows that this is the users own profile page. 
+* This page shows the hikes the user has added.
 * A button on this page prompts the user to add more hikes.
 * Also allows the user to edit or delete hikes taking them to an edit page or confirming a deletion should they wish to do so. 
 
 ### Add Hike 
 
-* A form is is used here to gather information from the user, once complete this is uploaded to the main landing page and the users profile page. 
+* A form is used here to gather information from the user, once complete this is uploaded to the main landing page as well as the users profile page. 
 
 ### Edit Hike 
 
-* This is the same form format as above, although the fields have been populated with the information already inputted onto the system.
+* This is the same form format as above, although the fields have been populated with the information already inputted onto the system by the user. 
 
 ### Features left to implement
 
 * An interactive map of Ireland showing the exact locations of the hikes. 
 * User reviews of the hikes.
-* Additional features such as what available in terms of facilities near the hikes i.e toilets, campgrounds etc.
+* Information such as what is available in terms of facilities near the hikes i.e toilets, campgrounds etc.
 * A shopping feature could be added.
 * A weather feature of the current weather in each of the locations. 
 * The addition of a fall back image should there be any issues with the user uploading a URL for their image. 
@@ -359,7 +360,7 @@ the results below related to the use of 'let' which are is available in ES6, thi
 
     1. Upon entering the site, there are cards on display with hike details. 
     2. Without logging in or registering users can discover details relating to the hikes.
-    3. Using the card reveal users can gather more in depth informaiton about the available hikes. 
+    3. There is a search function on the landing page to allow for quick searchs. 
 
 ![Hike Details](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/HIke%20Details%20.png "Hike Details")
 
@@ -401,7 +402,7 @@ the results below related to the use of 'let' which are is available in ES6, thi
 2.  As a site owner, I want visitors to find this site visually appealing.  
 
     1. The users are met with beautiful imagery throughout the site. 
-    2. There is also a colour theme throughout inclusive of fonts designed to be appealing to the user.  
+    2. There is a colour theme throughout inclusive of fonts designed to be appealing to the user.  
    
 
 ![Delete Page](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/Delete%20HIke%20.png "Delete Page")
@@ -424,7 +425,7 @@ the results below related to the use of 'let' which are is available in ES6, thi
 
 5.  As a site owner, I want to create a community where hikers come together and share information. 
 
-    1. Upon entering the site, users are encouraged to create an account with the aim of encouraging users to create hikes. 
+    1. Upon entering the site, users have the option to create a profile with the intention of encouraging users to create hikes. 
     2. Users can also access all of the hikes created by other users.  
     3. Users can quickly get a snapshot of hikes and will be encouraged by its simplicity of the add function to add their own hikes. 
 
@@ -470,9 +471,8 @@ Tested the game functionality on the devices listed below:
 
 #### Cards 
 
-* All cards on the landing page function as required when the user is not logged in. The information is available and 
-the card reveal provides the hike details when the user clicks on the card. 
-* Once the user is logged in there is additional functionality whereby the user can edit and delete hikes. 
+* All cards on the landing page function as required, when the user is not logged in. 
+* Once the user is logged in there is additional functionality whereby the user can edit and delete hikes they have created. 
 * Edit button, when clicked this takes the user to the edit hike page wherby they can edit the hikes they have added. 
 * Delete button, when clicked a modal pops up for confirmation that a post is to be deleted, this is working correctly. 
 * When editing, deleting a hike the user is greeted by a flash message and this is operating as expected. 
@@ -483,7 +483,7 @@ the card reveal provides the hike details when the user clicks on the card.
 
 #### Log In 
 
-* Log in working asrequired when inputting username and password, taken to profile page once completed. 
+* Log in working as required when inputting username and password, taken to profile page once completed. 
 * Flash message if incorrect username or password entered. 
 * Link to register account working correctly.
 
