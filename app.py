@@ -1,5 +1,7 @@
 import os
-from flask import Flask, flash, render_template, redirect, request, session, url_for
+from flask import (
+    Flask, flash, render_template,
+    redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -80,7 +82,8 @@ def profile(username):
 
     hikes = mongo.db.hikes.find()
 
-    username = mongo.db.users.find_one({"username": session["user"]})["username"]
+    username = mongo.db.users.find_one(
+        {"username": session["user"]})["username"]
 
     if session["user"]:
         return render_template("profile.html", username=username, hikes=hikes)
@@ -142,4 +145,6 @@ def delete_hike(hike_id, *user):
 
 
 if __name__ == "__main__":
-    app.run(host=os.environ.get("IP"), port=int(os.environ.get("PORT")), debug=True)
+    app.run(
+        host=os.environ.get("IP"),
+        port=int(os.environ.get("PORT")), debug=True)
