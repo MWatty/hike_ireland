@@ -3,7 +3,7 @@ $(document).ready(function () {
     $("select").formSelect();//selects options in th form 
     $(".modal").modal();//modal pop up
     
-//validate materialize select fields 
+//validates materialize select fields 
     validateMaterializeSelect();
     function validateMaterializeSelect() {
         let classValid = { "border-bottom": "1px solid #4caf50", "box-shadow": "0 1px 0 0 #4caf50" };
