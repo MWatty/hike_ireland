@@ -7,7 +7,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
     import env
 
-#Flask app sest up 
+
 app = Flask(__name__)
 
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
@@ -16,21 +16,21 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
-#hikes landing page 
+
 @app.route("/")
 @app.route("/get_hikes")
 def get_hikes():
     hikes = list(mongo.db.hikes.find())
     return render_template("hikes.html", hikes=hikes)
 
-#search function
+
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
     hikes = list(mongo.db.hikes.find({"$text": {"$search": query}}))
     return render_template("hikes.html", hikes=hikes)
 
-#register
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -56,7 +56,7 @@ def register():
 
     return render_template("register.html")
 
-#log in function
+
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "GET":
@@ -74,7 +74,7 @@ def login():
     flash("Incorrect Username and/or Password")
     return redirect(url_for("login"))
 
-#profile page 
+
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
 
@@ -87,7 +87,7 @@ def profile(username):
 
     return redirect(url_for("login"))
 
-#log out
+
 @app.route("/logout")
 def logout():
     # remove user from session cookie
@@ -95,7 +95,7 @@ def logout():
     session.pop("user")
     return redirect(url_for("login"))
 
-#add a hike
+
 @app.route("/add_hike", methods=["GET", "POST"])
 def add_hike():
     if request.method == "POST":
@@ -113,7 +113,7 @@ def add_hike():
         return redirect(url_for("get_hikes"))
     return render_template("add_hike.html")
 
-#edit a hike
+
 @app.route("/edit_hike/<hike_id>", methods=["GET", "POST"])
 def edit_hike(hike_id):
     if request.method == "POST":
@@ -133,7 +133,7 @@ def edit_hike(hike_id):
     hike = mongo.db.hikes.find_one({"_id": ObjectId(hike_id)})
     return render_template("edit_hike.html", hike=hike)
 
-#delete a hike
+
 @app.route("/delete_hike/<hike_id>")
 def delete_hike(hike_id, *user):
     mongo.db.hikes.remove({"_id": ObjectId(hike_id)})

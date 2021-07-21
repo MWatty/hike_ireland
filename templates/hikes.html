@@ -1,10 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
 
+<!--page heading-->
 <section class="top-base">
     <h3 class="light-green-text text-darken-4 center-align">Explore all of our Hikes</h3>
 
-
+<!--search-->
     <div class="row card-panel grey lighten-5">
         <form action="{{ url_for('search') }}" method="post" class="col s12">
             <div class="row valign-wrapper center-align">
@@ -26,7 +27,7 @@
     </div>
 </section>
 
-
+<!--cards-->
 {% if hikes|length > 0 %}
 <div class="row">
     {% for hike in hikes %}

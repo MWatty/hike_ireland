@@ -14,7 +14,7 @@ Milestone Project 3 - Backend Development - Code Institute
     + [Scope](#scope)
     + [Structure](#structure)
     + [Skeleton](#skeleton)
-      - [Database Schema](#database-schema)
+      - [Database Architecture](#database-architecture)
     + [Surface](#surface)
       - [Design](#design)
       - [Colour](#colour)
@@ -57,6 +57,7 @@ Milestone Project 3 - Backend Development - Code Institute
       - [Profile Page](#profile-page-2)
       - [Add Hike](#add-hike-1)
       - [Edit Hike](#edit-hike-2)
+      - [CRUD](#crud)
   * [Deployment](#deployment)
     + [Forking the GitHub Repository](#forking-the-github-repository)
     + [Making a Local Clone](#making-a-local-clone)
@@ -70,8 +71,6 @@ Milestone Project 3 - Backend Development - Code Institute
     + [Media](#media)
     + [Other](#other)
     + [Acknowledgements](#acknowledgements)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 
 ## Demo 
@@ -98,9 +97,9 @@ time and time again to gather information, provide information and learn more ab
 * As a visitor, I want to understand the main purpose of the site. 
 * As a visitor, I want the site to be simple to navigate.
 * As a visitor, I want to quickly find information about hikes. 
-* As a visitor, I want register an account so that I can add, update, edit and delete information I have provided.  
+* As a visitor, I want to register an account so that I can add, update, edit and delete information I have provided.  
 * As a visitor, I want the site to be visually appealing.
-* As a visitor, I want the sire to be accessible and responsive on all devices. 
+* As a visitor, I want the site to be accessible and responsive on all devices. 
 
 #### Site owner goals
 
@@ -122,10 +121,10 @@ all in one place.
 in its layout and architecture.
 
 * There is a header  and footer section on each page, with a "Hike Ireland" heading. Clicking on this
- heading will take the user back to the landing page of the website and this is, as mentioned above, 
+heading will take the user back to the landing page of the website and this is, as mentioned above, 
 an expected and understood convention. 
 
-* There is a Log In / Registration Feature which enabes users to create an account and create, update, edit and delete
+* There is a Log In / Registration Feature which enables users to create an account and create, update, edit and delete
 hiking posts. 
 
 * All elements of the website are easily discoverable and aim to ensure that the user can get to their desired destination within 
@@ -149,13 +148,32 @@ Please find full PDF versions of wireframes and sketches below:
 * [Tablet Wireframe](https://github.com/MWatty/hike_ireland/blob/main/static/assets/wireframes/HIKE%20IRELAND%20-%20TABLET.pdf)
 * [Desktop Wireframe](https://github.com/MWatty/hike_ireland/blob/main/static/assets/wireframes/HIKE%20IRELAND%20-%20DESKTOP.pdf)
 
-#### Database Schema
+#### Database Architecture
+
+* MongoDB non-relational database is used to store data for this project.
+* The database for this website is called hike_manager
+* Within the database there are 2 collections. 
+
+* The first collection is for hikers, this stores usernames and password:
+      - _id
+      - username 
+      - password
+
+* The second collection stores hike details:
+      - _id
+      - hike_name 
+      - county_name
+      - hike_distance
+      - difficulty_level
+      - hike_details 
+      - hike_image_url 
+      - created_by
 
 ### Surface 
 
 #### Design 
 
- * The overall design of the website is  simple. The site owner wants the user to simply navigate and 
+* The overall design of the website is  simple. The site owner wants the user to simply navigate and 
 understand what is on offer without being inundated with information. Clear text and imagery are used to achieve this. 
 
 #### Colour 
@@ -174,7 +192,7 @@ This was chosen using [google fonts](https://fonts.google.com/)
 
 #### Images 
 
-* All images used throughout the website have been carefully chosen to ensure the theme of the website is maintained throughout. 
+* The background images used throughout the website has been carefully chosen to ensure the theme of the website is maintained throughout. 
 Of course, users can upload their own images when adding posts which may lead to some differences in overall styling.  
 
 ### Final Project Variations 
@@ -182,13 +200,13 @@ Of course, users can upload their own images when adding posts which may lead to
 #### Navigation Bar
 
 * The navigation bar was amended from what was originally planned. 
-* The style used is much more simplistic and there is no text and the search bat has been places underneath. 
+* The style used is much more simplistic  and the search bar has been places underneath. 
 * The reason for this is to keep the site clean and minimalist looking. 
 * A home button was also added to the navigation to ensure that the user always has the option to return to the main landing page. 
 
 #### Main Container Landing Page
 
-* There was a slight deviation on the landing page initially it was planned to have 3 cards per row, but 2 cards were deemed to be more aesthetically pleasing that 2 and it allowed more space for the imagery to take centre stage. 
+* There was a slight deviation on the landing page initially it was planned to have 3 cards per row, but 2 cards were deemed to be more aesthetically pleasing as it allowed more space for the imagery to take centre stage. 
 * A background image was also applied throughout the website playing on the theme and also streamlining the movement between pages. 
 
 #### Footer 
@@ -220,36 +238,36 @@ Of course, users can upload their own images when adding posts which may lead to
 
 ### Landing Page
 
-* A navigation bar is, as expected, located across the top of the page, this notifies the user of the home page, log in and registration 
-* There is a search function should the user wish to search for an hike by name or location. 
+* A navigation bar is, as expected, located across the top of the page, this notifies the user of the home page, log in and registration. 
+* There is a search function should the user wish to search for a hike by name or location. 
 * There is also a card deck with details of the hikes that have been uploaded and the user can gather details from here. 
 * The footer container links to social media and a copyright symbol. 
 
 ### Log In / Registration 
 
-* These are standard simple log in / registration pages allowing the user to simply move navigate between each.
+* These are standard simple log in / registration pages allowing the user to simply navigate between each.
 
 ### Profile Page
 
-* This page identified the user 
-* Shows the hikes the user has added 
-* A button on this page prompts the user to add more hikes 
+* This page welcomes the user and clear shows that this is teh users own profile page. 
+* Shows the hikes the user has added.
+* A button on this page prompts the user to add more hikes.
 * Also allows the user to edit or delete hikes taking them to an edit page or confirming a deletion should they wish to do so. 
 
 ### Add Hike 
 
-* A form is is used here to gather information from the user, once complete this is uploaded to the maing landing page and the users profile. 
+* A form is is used here to gather information from the user, once complete this is uploaded to the main landing page and the users profile page. 
 
 ### Edit Hike 
 
-* This is the same form format as above, although the fields have been populated with the information already inputted onto the system 
+* This is the same form format as above, although the fields have been populated with the information already inputted onto the system.
 
 ### Features left to implement
 
-* An interactive map of Ireland showing the exact locations of the hikes 
-* User reviews of the hikes
-* Additional features such as what available in terms of facilities near the hikes i.e toilets, campgrounds etc 
-* A shopping feature could be added 
+* An interactive map of Ireland showing the exact locations of the hikes. 
+* User reviews of the hikes.
+* Additional features such as what available in terms of facilities near the hikes i.e toilets, campgrounds etc.
+* A shopping feature could be added.
 * A weather feature of the current weather in each of the locations. 
 * The addition of a fall back image should there be any issues with the user uploading a URL for their image. 
 
@@ -267,7 +285,7 @@ Of course, users can upload their own images when adding posts which may lead to
 
 ### Libraries 
 
-* [Materialize](https://materializecss.com/) is a design language that combines the classic principles of successful design along with innovation and technology. Google's goal is to develop a system of design that allows for a unified user experience across all their products on any platform.
+* [Materialize](https://materializecss.com/) is a design language, materilaize templates were used throughout the website. 
 
 * [Google-Fonts](https://fonts.google.com/) were used to style the website fonts and ensure they complimented each other.
 
@@ -340,7 +358,7 @@ the results below related to the use of 'let' which are is available in ES6, thi
  3. As a visitor, I want to quickly find information about hikes. 
 
     1. Upon entering the site, there are cards on display with hike details. 
-    2. Without logging in or registering users can discover details relating to the hink.
+    2. Without logging in or registering users can discover details relating to the hikes.
     3. Using the card reveal users can gather more in depth informaiton about the available hikes. 
 
 ![Hike Details](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/HIke%20Details%20.png "Hike Details")
@@ -348,7 +366,7 @@ the results below related to the use of 'let' which are is available in ES6, thi
  
 4.  As a visitor, I want register an account so that I can add, update, edit and delete information I have provided. 
 
-    1. Upon entering the site, the user has clear option to log in to their account. 
+    1. Upon entering the site, the user has a clear option to log in to their account. 
     2. New users also have the option to register their account.
     3. Once logged in / registered the user can update, edit and delete their hikes. 
 
@@ -357,13 +375,13 @@ the results below related to the use of 'let' which are is available in ES6, thi
 
 5.  As a visitor, I want the site to be visually appealing.
 
-    1. Upon entering the site, the user is met with a beautiful abckground image, this is carried throughout the site. 
+    1. Upon entering the site, the user is met with a beautiful background image, this is carried throughout the site. 
     2. Users can also add their own images to the site.  
     3. A pallette of greens are used throughtout to add to the attractiveness of the site and marry with the theme. 
 
 ![Profile Page](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/Profile%20Page.png "Profile Page")
 
-6.  As a visitor, I want the sire to be accessible and responsive on all devices.
+6.  As a visitor, I want the site to be accessible and responsive on all devices.
 
     1. The website has been designed to be responsive on all devices.  
 
@@ -391,7 +409,7 @@ the results below related to the use of 'let' which are is available in ES6, thi
 3.  As a site owner, I want visitors to enjoy and interact with the site.
 
     1. Users can utilise the search function. 
-    2. Users can create and a profile to update, create and delete hikes.  
+    2. Users can create a profile to update, create and delete hikes.  
     3. Flash messages appear when users update, create or delete hikes all adding to the interactivity of the site.  
 
 ![Flash Page](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/Flash%20Message%20.png "Flash Page")
@@ -400,15 +418,15 @@ the results below related to the use of 'let' which are is available in ES6, thi
 
     1. In order to encourage users to return there is a log in function where they can view their own profile.  
     2. Users are also encouraged to register an account.  
-    3. The simplicity of the forms aim to encourage returning to the site.  
+    3. The simplicity of the forms aims to encourage returning to the site.  
 
 ![Edit Hike Page](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/Edit%20Hike.png "Edit Hike Page")
 
 5.  As a site owner, I want to create a community where hikers come together and share information. 
 
-    1. Upon entering the site, users are encourage to create an account with the aim of encouraging users to create hikes. 
+    1. Upon entering the site, users are encouraged to create an account with the aim of encouraging users to create hikes. 
     2. Users can also access all of the hikes created by other users.  
-    3. Users can quickly get a snapshot of hikes and will be encourage by its simplicity of the add function to add their own hikes. 
+    3. Users can quickly get a snapshot of hikes and will be encouraged by its simplicity of the add function to add their own hikes. 
 
 ![Add Hike Page](https://github.com/MWatty/hike_ireland/blob/main/static/assets/website%20screenshots/Add%20Hike%20.png "Add Hike Page")
 
@@ -433,16 +451,16 @@ Tested the game functionality on the devices listed below:
 
 * Label / Placeholder on the search bar was not fitting on screens below 320px created media query to remove label/placeholder. 
 
-* Social media links did not open in a new tab when tested 
+* Footer social media links were not opening in a new tab, this was fixed using `target="_blank"`
 
 ### Features Tested 
 
 #### Navigation Bar 
 
-* "Hike Ireland" acts as a home button throughout together with the home button, both funcitonining as expected. 
+* "Hike Ireland" acts as a home button throughout together with the home button, both functioning as expected. 
 * Both the log in and registration links are acting as expected. 
-* Once logged in / registered the links in the vavigatiown bar are fully functinal and direct the user accordingly.]\ 
-* The log out function is operating as exptcted. 
+* Once logged in / registered the links in the navigatiown bar are fully functional and direct the user accordingly.
+* The log out function is operating as expected. 
 
 #### Search Bar
 
@@ -452,20 +470,20 @@ Tested the game functionality on the devices listed below:
 
 #### Cards 
 
-* All cards on the landing page function as required when the user is not looged in. The informaiton is available and 
+* All cards on the landing page function as required when the user is not logged in. The information is available and 
 the card reveal provides the hike details when the user clicks on the card. 
 * Once the user is logged in there is additional functionality whereby the user can edit and delete hikes. 
-* Edit button, when clicked this taked the user to the edit hike page wherby they can edit the hikes they have added. 
+* Edit button, when clicked this takes the user to the edit hike page wherby they can edit the hikes they have added. 
 * Delete button, when clicked a modal pops up for confirmation that a post is to be deleted, this is working correctly. 
-* When editing, deleting a hike teh user is greeted by a flash message and this is operating as expected. 
+* When editing, deleting a hike the user is greeted by a flash message and this is operating as expected. 
 
 #### Footer 
 
-* All links working as ddesired wihtin the footer element. 
+* All links working as desired wihtin the footer element. 
 
 #### Log In 
 
-* Log in working as arequired when inputting username and password, taken to profile page once completed. 
+* Log in working asrequired when inputting username and password, taken to profile page once completed. 
 * Flash message if incorrect username or password entered. 
 * Link to register account working correctly.
 
@@ -481,7 +499,7 @@ the card reveal provides the hike details when the user clicks on the card.
 * Username is displayed at the top of the page as required. 
 * Add hike button functioning correctly and taking user to the add hike page. 
 * Only user hikes that they have created are on display on this page. 
-* As above funciton buttons on this page are working as expected, "Edit" and "Delete". 
+* As above function buttons on this page are working as expected, "Edit" and "Delete". 
 
 #### Add Hike 
 
@@ -494,7 +512,12 @@ the card reveal provides the hike details when the user clicks on the card.
 * The form is autopopulating with the correct information to allow the user to edit simply what they need to. 
 * Done button is working and re-directing correctly and hike is being updated as per the instruction of the user.
 * Flash messages are appearing as expected with the correct messaging. 
-* Cancel button is working as expected. 
+* Cancel button is working as expected.
+
+#### CRUD 
+
+* Wesbite extensively tested to ensure the Create, Read, Update and Delete requirements are met. 
+* Hikes have been added, read, updated and deleted and this is working as required on the website in conjunction with the Mongo hike_manager database. 
 
 
 ## Deployment 
@@ -537,8 +560,8 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 1. Login to your MongoDB account
 2. Create a **cluster**
-3. Create a **database**
-4. Create required **collections** in the database named.
+3. Create a **database**, for this website the database used is called hike_manager. 
+4. Create required **collections** in the database named, collections used for this website included hikes and users. 
 
 ### Setting Up the Environment Variables
 
