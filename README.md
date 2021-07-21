@@ -155,19 +155,19 @@ Please find full PDF versions of wireframes and sketches below:
 * Within the database there are 2 collections. 
 
 * The first collection is for hikers, this stores usernames and password:
-      - _id
-      - username 
-      - password
+  1.  _id
+  2.  username 
+  3.  password
 
 * The second collection stores hike details:
-      - _id
-      - hike_name 
-      - county_name
-      - hike_distance
-      - difficulty_level
-      - hike_details 
-      - hike_image_url 
-      - created_by
+  1. _id
+  2. hike_name 
+  3. county_name
+  4. hike_distance
+  5. difficulty_level
+  6. hike_details 
+  7. hike_image_url 
+  8. created_by
 
 ### Surface 
 
