@@ -17,6 +17,8 @@ a:hover {
     color: #e0e0e0;
 }
 
+/*-------nav bar---------*/
+
 .text-shadow {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
@@ -24,6 +26,8 @@ a:hover {
 .nav-titles {
     font-size: 15px;
 }
+
+/*------buttons--------*/
 
 .btn-small {
     margin-top: 10px;
@@ -33,6 +37,8 @@ a:hover {
     font-size: 15px;
     margin: 5px;
 }
+
+/*-------cards--------*/
 
 .card-title {
     text-align: center;
@@ -47,6 +53,8 @@ a:hover {
     color: black;
 }
 
+/*--------flash messages---------*/
+
 .flashes h4 {
     margin: auto;
     margin-top: 45px;
@@ -55,6 +63,8 @@ a:hover {
     color: white;
     width: 50%;
 }
+
+/*--------footer-------*/
 
 .footer-colour {
     background-color: #43a047;
@@ -77,6 +87,8 @@ ul.footer-list li {
     display: inline;
     margin: 12px;
 }
+
+/*--------media queries-------*/
 
 @media only screen and (max-width: 600px) {
     .function-btn {
